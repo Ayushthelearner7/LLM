@@ -1,15 +1,9 @@
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatOpenAI(
-    model="gemini-2.5-flash",
-    api_key="AIzaSyA1LnRz78C-xzuZiIRxr-O0mcx9wqcs33g", 
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-    temperature=1.5,
-    max_completion_tokens=5000
-)
+model = ChatGoogleGenerativeAI(model = 'gemini-2.5-flash')
 
 result = model.invoke("write 5 line poem on cricket")
 
