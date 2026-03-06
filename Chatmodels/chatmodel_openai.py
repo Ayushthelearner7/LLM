@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatGoogleGenerativeAI(model = 'gemini-2.5-flash')
+model = ChatGoogleGenerativeAI(model = 'gemini-2.5-flash-lite')
 
-result = model.invoke("write 5 line poem on cricket")
+result = model.invoke("who is the pm of india")
 
 print(result.content)
