@@ -1,0 +1,5 @@
+{
+    "_type": "prompt",
+    "input_variables": ["paper_input", "style_input", "length_input"],
+    "template": "Summarize the research paper '{paper_input}' in a {style_input} style. The explanation should be {length_input}."
+}
